@@ -1,1 +1,0 @@
-# tenban.github.io
