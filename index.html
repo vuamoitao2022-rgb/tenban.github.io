@@ -2,19 +2,24 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Website của tôi</title>
+    <title>Website tích hợp LiveChat</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f8ff;
-            margin-top: 50px;
+            background-color: #f0f0f0;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
         }
     </style>
 </head>
 <body>
+
     <h1>Chào mừng bạn đến với website của tôi!</h1>
-    <p>Đây là trang web miễn phí tích hợp LiveChat 🎉</p>
+    <p>LiveChat đã được tích hợp vào trang web này.</p>
 
     <!-- Start of LiveChat (www.livechat.com) code -->
     <script>
@@ -35,14 +40,14 @@
                 call:function(){i(["call",c.call(arguments)])},
                 init:function(){
                     var n=t.createElement("script");
-                    n.async=!0;
-                    n.type="text/javascript";
-                    n.src="https://cdn.livechatinc.com/tracking.js";
+                    n.async = true;
+                    n.type = "text/javascript";
+                    n.src = "https://cdn.livechatinc.com/tracking.js";
                     t.head.appendChild(n)
                 }
             };
             !n.__lc.asyncInit && e.init();
-            n.LiveChatWidget=n.LiveChatWidget || e
+            n.LiveChatWidget = n.LiveChatWidget || e
         }(window,document,[].slice))
     </script>
     <noscript>
