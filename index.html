@@ -3,128 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GameZone - Kho ứng dụng trò chơi</title>
+  <title>Spa Nga Henry - Thư giãn & Làm đẹp</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
     }
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
+      background: linear-gradient(to right, #f8cdda, #f1a7f1);
+      padding: 40px;
       text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 40px;
     }
     nav {
-      background-color: #34495e;
-      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
+      padding: 10px;
     }
     nav a {
-      color: white;
       margin: 0 15px;
       text-decoration: none;
+      color: #e91e63;
       font-weight: bold;
     }
     .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #e91e63;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       padding: 20px;
+      text-align: center;
     }
-    #searchInput {
+    .service-card img {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .game-card {
-      background-color: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 15px;
-      margin-bottom: 20px;
+      height: 180px;
+      object-fit: cover;
     }
-    .game-card h3 {
-      margin-top: 0;
-    }
-    .download-btn {
-      background-color: #27ae60;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .download-btn:hover {
-      background-color: #2ecc71;
+    .service-card h3 {
+      margin-top: 15px;
+      color: #d81b60;
     }
     footer {
-      background-color: #2c3e50;
-      color: white;
+      background-color: #f8cdda;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🎮 GameZone</h1>
-    <p>Kho ứng dụng trò chơi miễn phí cho mọi người</p>
+    <h1>Spa Nga Henry</h1>
+    <p>Thư giãn - Làm đẹp - Tái tạo năng lượng</p>
   </header>
 
   <nav>
     <a href="#">Trang chủ</a>
-    <a href="#">Thể loại</a>
-    <a href="#">Top Game</a>
+    <a href="#">Dịch vụ</a>
+    <a href="#">Hình ảnh</a>
     <a href="#">Liên hệ</a>
   </nav>
 
   <div class="container">
-    <input type="text" id="searchInput" placeholder="Tìm kiếm game..." onkeyup="searchGames()">
-
-    <div class="game-card">
-      <h3>Among Us</h3>
-      <p>Game hành động vui nhộn, chơi cùng bạn bè để tìm ra kẻ giả mạo!</p>
-      <button class="download-btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.innersloth.spacemafia', '_blank')">Tải về</button>
-    </div>
-
-    <div class="game-card">
-      <h3>Subway Surfers</h3>
-      <p>Game chạy không ngừng, né chướng ngại vật và thu thập xu!</p>
-      <button class="download-btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf', '_blank')">Tải về</button>
-    </div>
-
-    <div class="game-card">
-      <h3>Shadow Fight 3</h3>
-      <p>Game đối kháng với đồ họa đẹp mắt và kỹ năng đa dạng.</p>
-      <button class="download-btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.nekki.shadowfight3', '_blank')">Tải về</button>
+    <h2 class="section-title">🌺 Dịch vụ nổi bật</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://posapp.vn/wp-content/uploads/2022/07/dich-vu-cham-soc-da-mat.jpg" alt="Chăm sóc da mặt">
+        <h3>Chăm sóc da mặt chuyên sâu</h3>
+        <p>Làm sạch, cấp ẩm, trị liệu da mụn và lão hóa.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://diva.edu.vn/wp-content/uploads/2022/11/dich-vu-triet-long.jpg" alt="Triệt lông công nghệ cao">
+        <h3>Triệt lông công nghệ cao</h3>
+        <p>Không đau, hiệu quả lâu dài, an toàn cho da nhạy cảm.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://bongspa.vn/wp-content/uploads/2023/02/dich-vu-massage-body.jpg" alt="Massage body thư giãn">
+        <h3>Massage body thư giãn</h3>
+        <p>Giảm stress, lưu thông khí huyết, phục hồi năng lượng.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://soulcare.vn/wp-content/uploads/2023/05/dich-vu-tam-trang.jpg" alt="Tắm trắng thảo dược">
+        <h3>Tắm trắng thảo dược</h3>
+        <p>Giúp da sáng mịn, đều màu, nuôi dưỡng từ sâu bên trong.</p>
+      </div>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 GameZone. Thiết kế bởi bạn và Copilot.
+    &copy; 2025 Spa Nga Henry | Thiết kế bởi bạn và Copilot
   </footer>
-
-  <script>
-    function searchGames() {
-      const input = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.getElementsByClassName('game-card');
-
-      for (let i = 0; i < cards.length; i++) {
-        const title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-        const description = cards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
-
-        if (title.includes(input) || description.includes(input)) {
-          cards[i].style.display = 'block';
-        } else {
-          cards[i].style.display = 'none';
-        }
-      }
-    }
-  </script>
 
   <!-- Start of LiveChat (www.livechat.com) code -->
   <script>
